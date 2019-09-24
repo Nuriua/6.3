@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int K,N;
+	cout << "Vvedite kolichestvo dney ";
+	cin >> K;
+	cout << "Vvedite nomer dnya nedeli  ";
+	cin >> N;
+    if (K%7==0)
+    {
+        cout<< N-1;
+    }
+    else 
+    {
+        cout<< K%7+N-1;
+    }
+    return 0;
+}
